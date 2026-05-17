@@ -4,9 +4,10 @@ import Footer from "../components/footer";
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+const apiUrl = import.meta.env.VITE_API_URL
 
 export default function Login() {
-  const apiUrl = import.meta.env.VITE_API_URL
+  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

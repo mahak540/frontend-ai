@@ -6,6 +6,7 @@ import axios from "axios";
 
 
 function Navbar() {
+  const apiUrl = import.meta.env.VITE_API_URL
   const [user,setUser] = useState(null);
   useEffect(()=>{
 
@@ -14,7 +15,7 @@ function Navbar() {
         try{
 
             const response = await axios.get(
-                "http://localhost:5000/current-user",
+                `${apiUrl}/current-user`,
                 {
                     withCredentials:true
                 }
