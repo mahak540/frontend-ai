@@ -1,0 +1,54 @@
+<svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38BDF8"></stop>
+      <stop offset="50%" stop-color="#6366F1"></stop>
+      <stop offset="100%" stop-color="#A855F7"></stop>
+    </linearGradient>
+
+    <!-- Soft glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Shadow depth -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"></feDropShadow>
+    </filter>
+  </defs>
+
+  <!-- Base soft background plate -->
+  <rect x="18" y="18" width="124" height="124" rx="32" fill="#0B1220" filter="url(#shadow)"></rect>
+
+  <!-- Outer orbit ring -->
+  <circle cx="80" cy="80" r="44" fill="none" stroke="url(#coreGrad)" stroke-width="3" opacity="0.8" filter="url(#glow)"></circle>
+
+  <!-- Inner orbit ring (offset for motion feel) -->
+  <circle cx="80" cy="80" r="30" fill="none" stroke="url(#coreGrad)" stroke-width="2" opacity="0.6" stroke-dasharray="6 6"></circle>
+
+  <!-- Central AI core (node cluster) -->
+  <circle cx="80" cy="80" r="10" fill="url(#coreGrad)" filter="url(#glow)"></circle>
+
+  <!-- Neural nodes -->
+  <circle cx="80" cy="45" r="5" fill="#38BDF8"></circle>
+  <circle cx="115" cy="80" r="5" fill="#6366F1"></circle>
+  <circle cx="80" cy="115" r="5" fill="#A855F7"></circle>
+  <circle cx="45" cy="80" r="5" fill="#38BDF8"></circle>
+
+  <!-- Connection paths (AI network flow) -->
+  <path d="M80 70 L80 50" stroke="#38BDF8" stroke-width="2" opacity="0.6"></path>
+  <path d="M90 80 L110 80" stroke="#6366F1" stroke-width="2" opacity="0.6"></path>
+  <path d="M80 90 L80 110" stroke="#A855F7" stroke-width="2" opacity="0.6"></path>
+  <path d="M70 80 L50 80" stroke="#38BDF8" stroke-width="2" opacity="0.6"></path>
+
+  <!-- Subtle diagonal energy arcs -->
+  <path d="M50 50 C65 35, 95 35, 110 50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"></path>
+  <path d="M50 110 C65 125, 95 125, 110 110" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"></path>
+
+</svg>

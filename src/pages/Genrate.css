@@ -1,0 +1,140 @@
+.generate-page {
+  min-height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+/* MAIN CARD */
+.generate-container {
+  width: 700px;
+
+  background-color: white;
+
+  padding: 40px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.generate-container h1 {
+  text-align: center;
+
+  margin-bottom: 30px;
+}
+
+/* MODE BUTTONS */
+.mode-buttons {
+  display: flex;
+
+  gap: 20px;
+
+  margin-bottom: 25px;
+}
+
+.mode-buttons button {
+  flex: 1;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  background-color: #e5e7eb;
+
+  font-size: 16px;
+
+  transition: 0.3s;
+}
+
+.active-mode {
+  background-color: #2563eb !important;
+
+  color: white;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+
+  height: 150px;
+
+  padding: 15px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 8px;
+
+  resize: none;
+
+  font-size: 16px;
+
+  margin-bottom: 20px;
+}
+
+/* FILE INPUT */
+.file-input {
+  margin-bottom: 20px;
+}
+
+/* GENERATE BUTTON */
+.generate-btn {
+  width: 100%;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background-color: #2563eb;
+
+  color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  margin-bottom: 30px;
+}
+
+.generate-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* IMAGE BOX */
+.preview-box {
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: #f4f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.preview-box img{
+  height: 80%;
+  width: 100%;
+}
+.download-btn{
+  background-color: #176fc6;
+  color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}

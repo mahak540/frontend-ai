@@ -1,0 +1,24 @@
+.login-btn,
+.logout-btn {
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.login-btn {
+  background: #007bff;
+  color: white;
+}
+
+.logout-btn {
+  background: #ff4d4d;
+  color: white;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
