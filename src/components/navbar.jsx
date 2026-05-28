@@ -59,11 +59,7 @@ function Navbar() {
           </Link>
         </li>
         
-        
-
-      </ul>
-
-      {
+              {
   !user ? (
 
     <Link to="/login">
@@ -78,6 +74,10 @@ function Navbar() {
 
   )
 }
+
+      </ul>
+
+
     </nav>
   );
 }
