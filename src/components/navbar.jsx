@@ -34,7 +34,7 @@ function Navbar() {
     fetchUser();
 
 },[])
-  return (
+ return (
     <nav className="navbar">
 
       <div className="navbar-logo">
@@ -59,7 +59,11 @@ function Navbar() {
           </Link>
         </li>
         
-              {
+        
+
+      </ul>
+
+      {
   !user ? (
 
     <Link to="/login">
@@ -74,12 +78,9 @@ function Navbar() {
 
   )
 }
-
-      </ul>
-
-
     </nav>
   );
+
 }
 
 export default Navbar;
