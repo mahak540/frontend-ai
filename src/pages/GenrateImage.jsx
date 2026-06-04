@@ -33,7 +33,7 @@ export default function Image() {
       setLoading(true);
 
       const response = await axios.post(
-        `${apiUrl}/generate-image`,
+        'https://backend-ai-f9a9.onrender.com/generate-image',
         {
           prompt
         }
